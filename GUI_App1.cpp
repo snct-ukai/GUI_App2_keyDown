@@ -135,6 +135,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
     switch (message)
     {
     case WM_CREATE:
+        break;
 
     case WM_CLOSE: // ウィンドウ閉じるメッセージ
         for (int i = 0; i < 4; i++) {
