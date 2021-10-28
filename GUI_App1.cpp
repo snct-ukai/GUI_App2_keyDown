@@ -134,32 +134,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
     switch (message)
     {
-    case WM_CREATE: // ウィンドウ生成メッセージ
-        hFont[0] = CreateFont(80, 80, 0, 0, FW_DONTCARE,
-            FALSE, FALSE, FALSE, DEFAULT_CHARSET,
-            OUT_DEFAULT_PRECIS, CLIP_DEFAULT_PRECIS,
-            DEFAULT_QUALITY, DEFAULT_PITCH | FF_DONTCARE,
-            TEXT("HGｺﾞｼｯｸE")); // フォントオブジェクトを作成
-
-        hFont[1] = CreateFont(60, 60, 0, 0, FW_DONTCARE,
-            FALSE, FALSE, FALSE, DEFAULT_CHARSET,
-            OUT_DEFAULT_PRECIS, CLIP_DEFAULT_PRECIS,
-            DEFAULT_QUALITY, DEFAULT_PITCH | FF_DONTCARE,
-            TEXT("HG行書体")); // フォントオブジェクトを作成
-
-        hFont[2] = CreateFont(120, 120, 0, 0, FW_DONTCARE,
-            FALSE, FALSE, FALSE, DEFAULT_CHARSET,
-            OUT_DEFAULT_PRECIS, CLIP_DEFAULT_PRECIS,
-            DEFAULT_QUALITY, DEFAULT_PITCH | FF_DONTCARE,
-            TEXT("HG創英ﾌﾟﾚｾﾞﾝｽEB")); // フォントオブジェクトを作成
-
-        hFont[3] = CreateFont(100, 100, 0, 0, FW_DONTCARE,
-            FALSE, FALSE, FALSE, DEFAULT_CHARSET,
-            OUT_DEFAULT_PRECIS, CLIP_DEFAULT_PRECIS,
-            DEFAULT_QUALITY, DEFAULT_PITCH | FF_DONTCARE,
-            TEXT("HG創英角ﾎﾟｯﾌﾟ体")); // フォントオブジェクトを作成
-
-        break;
+    case WM_CREATE:
 
     case WM_CLOSE: // ウィンドウ閉じるメッセージ
         for (int i = 0; i < 4; i++) {
