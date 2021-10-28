@@ -127,14 +127,16 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
 
 HFONT hFont[4];
 TCHAR str[100];
-static int kx = 100;
-static int ky = 100;
+static int kx;
+static int ky;
 
 LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
     switch (message)
     {
     case WM_CREATE:
+        kx = 100;
+        ky = 100;
         break;
 
     case WM_CLOSE: // ウィンドウ閉じるメッセージ
